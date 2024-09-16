@@ -1,0 +1,36 @@
+.table{
+  width: max-content;
+  margin: 4px;
+}
+.containerTabla{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ttl-car-compras{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 10px rgb(255, 255, 255);
+}
+
+@keyframes parpadeo{
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#car-message{
+  animation: parpadeo 1s ease-in-out 5;
+  color: rgb(3, 75, 12);
+  text-shadow: 1px 1px 2px olivedrab;
+  border: 1px olive solid;
+  text-align: center;
+  padding: 4px;
+
+}

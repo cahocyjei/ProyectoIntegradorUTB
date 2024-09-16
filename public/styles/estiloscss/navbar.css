@@ -1,0 +1,197 @@
+body {
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    margin-top: 160px;
+}
+
+/*Estilos Nav Bar*/
+#nav {
+    display: block;
+    margin: 0;
+    background-size: 100%;
+    background-image: url('/images/avocados.jpg');
+    height: auto;
+}
+
+.menus{
+    margin-left: 0;
+    margin-right: 16px;
+    border: 1px black solid;
+}
+
+#nav-menus{
+    margin: 10px;
+    display: flex;
+    border: 1px olive solid;
+}
+
+#mnu-productos, #mnu-pedidos{
+    background-color: olive;
+    margin: 10px;
+}
+
+#inicio{
+padding: 3px;
+margin: 10px;
+color: white;
+background-color: olive;
+border: 1px white solid; 
+width: 90px; 
+text-align: center; 
+margin: 2px;
+font-size: 18px;
+border-radius: 10px;
+}
+
+#btn-prod {
+    background-color: olive;
+    color: white;
+    border: 1px olive;
+
+}
+.cont-btn{
+    margin: 10px;
+}
+#btn-pedidos{
+   background-color: olive;
+    color: white;
+    border: 1px olive; 
+}
+
+.nav-container {
+    margin: 4px;
+    margin-left: 0;
+    display: flex;
+    width: 100%;
+}
+
+#content-ttlo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    margin: 4px;
+}
+
+#ttlo-nav {
+    margin: 10px;
+    font-size: 72px;
+    color: white;
+    text-shadow: 2px 2px 2px olive;
+    font-family: 'Tangerine', serif;
+}
+
+#ttlo-car {
+    text-align: center;
+}
+
+#id-cont-coment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+}
+
+#comentario {
+    color: olive;
+    text-shadow: 2px 2px 2px white;
+}
+
+/*Estilos Car*/
+#container-car {
+    width: max-content;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#car {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: olive;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin: 4px;
+}
+
+#ttlo-car {
+    font-size: 22px;
+    color: white;
+    margin: 4px;
+}
+
+#car:hover {
+    transform: translateX(2px);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 2PX 2PX 5PX white;
+}
+
+svg {
+    margin-left: 0;
+}
+
+.car-content {
+    display: flex;
+    align-items: center;
+}
+
+.count-car {
+    background-color: olive;
+    border-radius: 100%;
+    width: 30px;
+    text-align: center;
+    margin: 4px;
+}
+
+.count-car:hover {
+    cursor: pointer;
+    background-color: rgb(110, 110, 12);
+}
+
+.card-car-body {
+    border: solid 1px white;
+    width: max-content;
+    margin-left: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+}
+
+/*Estilos */
+#prdto {
+    cursor: pointer;
+}
+
+#pd-proveedor {
+    cursor: pointer;
+}
+
+
+@media (max-width:740px) {
+    .navbar-title h1 {
+        color: #f3d52b;
+        font-size: 20px;
+    }
+
+    .navbar-logo img {
+        height: 1em;
+        width: 1em;
+        border-radius: 100%;
+    }
+
+    svg {
+        width: .3em;
+        height: .3em;
+    }
+
+    #ttlo-car {
+        font-size: 15px;
+    }
+}
+
+.container-nav {
+    border: 1px black solid;
+}

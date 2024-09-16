@@ -1,0 +1,90 @@
+#id-container {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#ttlo-detail {
+  text-align: center;
+  text-shadow: 4px 4px 10px olive;
+  font-size: 72px;
+  font-family: 'Tangerine', serif;
+}
+
+#id-img {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+}
+
+.fontp {
+  width: max-content;
+}
+
+#card-detail {
+  margin: 10px;
+  box-shadow: 4px 4px 10px white;
+  width: 400px;
+  border-radius: 200px;
+
+}
+
+* {
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#ad-car {
+  width: max-content;
+  border: 2px rgb(255, 255, 255) solid;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: 0;
+  margin-top: 4px;
+}
+
+#ad-car:hover {
+  background-color: rgb(218, 218, 196);
+  opacity: 1;
+}
+
+#pdescrip {
+  color: white;
+  font-weight: bold;
+  text-align: justify;
+  padding: 6px;
+  margin-left: 0;
+}
+
+.detail {
+  width: 400px;
+  height: 150px;
+
+  margin-bottom: 4px;
+}
+
+.card-detail-img {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="number"] {
+  border-radius: 4px;
+  outline: 1px rgb(27, 22, 22) solid;
+  width: max-content;
+}
+
+.card-body {
+  width: max-content;
+  height: max-content;
+  margin: 10px;
+  margin-left: 35%;
+}
+
+#sku #nombre #precio #stock{
+  font-size: 32px;
+}

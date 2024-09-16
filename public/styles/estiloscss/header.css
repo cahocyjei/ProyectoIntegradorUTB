@@ -1,0 +1,34 @@
+.container-header {
+  margin: 0 auto ;
+  padding: 4px;
+  border: 1px rgb(7, 7, 4) solid;
+  background-color: olive;
+  position: relative;
+  z-index: 1;
+  width: 50%;
+
+}
+.carousel-item {
+  position: relative;
+  z-index: 1;
+}
+
+.carousel-item.active{
+  position: relative;
+  z-index: 1;
+}
+
+#titulo-header {
+  font-family: 'Tangerine', serif;
+  text-align: center;
+  text-shadow: 4px 4px 10px white;
+  color: white;
+}
+
+#titulo-header {
+  margin: 4px;
+}
+.carousel-inner img{
+  width: 100%;
+  height: auto;
+}

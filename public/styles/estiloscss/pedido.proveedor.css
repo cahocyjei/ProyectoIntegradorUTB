@@ -1,0 +1,216 @@
+/*Estilos head*/
+.ped-alm-container {
+  width: 99.5%;
+  margin: 4px;
+  background-color: rgb(202, 198, 198);
+  border: 1px rgb(131, 128, 128) solid;
+  height: auto;
+}
+
+.ped-contenido-head {
+  display: flex;
+  justify-content: space-between;
+  border: 1px white solid;
+  width: 99.5;
+}
+
+#pd-logo-form {
+  width: max-content;
+  margin: 4px;
+}
+
+#pd-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  box-shadow: 2px 2px 4px white;
+}
+
+#fecha {
+  padding: 4px;
+  margin: 2px;
+  border: 1px white solid;
+  display: flex;
+}
+
+#pd-title {
+  margin: 2px;
+  border: 1px rgb(131, 128, 128) solid;
+}
+
+#pd-dir {
+  margin: 2px;
+  border: 1px rgb(131, 128, 128) solid;
+}
+
+#pd-cont-fecha {
+  margin: 2px;
+  border: 1px rgb(131, 128, 128) solid;
+  width: 200px;
+}
+
+input[type='number'] {
+  width: 45px;
+}
+
+#pd-num-container {
+  width: 200px;
+  margin: 2px;
+  border: 1px rgb(131, 128, 128) solid;
+}
+
+#pd-num {
+  display: flex;
+  margin: 2px;
+  border: 1px white solid;
+}
+
+/*Estilos Proveedor*/
+.pd-prov-container {
+  margin-top: 2px;
+  display: flex;
+  margin-left: 2px;
+  width: 99.6%;
+  border: 1px rgb(131, 128, 128) solid;
+}
+
+#pd-select {
+  width: 200px;
+  border: 1px white solid;
+  margin: 4px;
+}
+
+#pd-lab-select {
+  margin-left: 0;
+}
+
+#pd-select-dir {
+  width: 90.6%;
+  margin: 4px;
+  display: flex;
+  border: 1px white solid;
+}
+
+#pd-lab-select {
+  margin-left: 0;
+}
+
+/*Estilos Container Factura y lista productos*/
+.pd-container-factura-listprod {
+  margin-top: 2px;
+  display: flex;
+  margin-left: 2px;
+  width: 99.6%;
+  border: 1px rgb(131, 128, 128) solid;
+  margin-bottom: 2px;
+}
+
+/*Estilos List prod*/
+.pd-list-prod-container {
+  margin: 4px;
+  display: flex;
+  border: 1px white solid;
+  width: 37%;
+}
+
+#pd-prov-img{
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+}
+
+#pd-prov-content{
+  margin: 10px;
+  box-shadow: 4px 4px 10px rgb(29, 29, 28);
+  border-radius: 10px;
+  display: flex;
+  width: 170px;
+  height: 50px;
+  background-color: olive;
+}
+
+#pd-nom-prod{
+margin: 2px;
+text-align: center;
+color: black;
+text-shadow: 1px 1px 2px greenyellow;
+}
+
+#pd-nom-prod:hover{
+  
+ transform: translateX(-2px);
+ transition: transform 0.3s ease-in-out; 
+}
+
+/*Estilos Factura prod*/
+.pd-fact-container {
+  width: 61.6%;
+  border: 1px white solid;
+  margin-bottom: 4px;
+ 
+  display: block;
+  margin-left: 38%;
+  margin-top: -227px;
+}
+.num-fact-content{
+  display: flex;
+  width: 100%;
+  margin: 4px;
+  border: 1px rgb(131, 128, 128) solid;
+}
+
+#pd-det{
+  width: 46%;
+}
+
+#dia{
+  width: 50px;
+  text-align: center;
+  margin-left: 4px;
+}
+
+#año {
+  width: 70px;
+  text-align: center;
+  margin-left: 4px;
+}
+
+#mes{
+  width: 50px;
+  text-align: center;
+  margin-left: 4px;
+}
+thead tr th{
+  text-align: center;
+}
+.cod-prod-content{
+  justify-content: space-evenly;
+}
+.nom-prod-precio{
+  justify-content: space-evenly;
+}
+#pd-cdgo-list{
+  margin-left: 0;
+  font-weight: bold;
+}
+#pd-num-pedido{
+  width: 182px;
+}
+#pd-enviar{
+  width: 98%;
+  margin: 8px;
+  border-radius: 10px;
+  background-color: olive;
+  color: white;
+}
+#pd-fila{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 3 columnas de igual ancho */
+  background-color: white;
+  margin: 10px;
+  width: 100%;
+  height: 200px;
+  overflow-y: scroll;
+}
