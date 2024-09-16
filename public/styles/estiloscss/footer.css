@@ -50,3 +50,18 @@
 .footer-links a:hover {
   text-decoration: underline;
 }
+
+@media (max-width:740px) {
+  #footer{
+    width: 100%;
+    margin-left: 2px;
+  }
+  .footer-links {
+    width: 100%;
+    border: 1px rgb(255, 255, 255) solid;
+  }
+
+  .footer-links li a{
+    font-size: 10px;
+  }
+}

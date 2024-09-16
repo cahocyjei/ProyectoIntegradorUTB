@@ -214,3 +214,61 @@ thead tr th{
   height: 200px;
   overflow-y: scroll;
 }
+
+@media (max-width: 740px){
+  .ped-alm-container {
+    margin: 2px;
+    border: 1px rgb(15, 9, 9) solid;
+  }
+
+  .ped-contenido-head {
+    display: block;
+    justify-content: space-between;
+    border: 1px white solid;
+    width: 99.5;
+  }
+
+  #pd-logo-form {
+    width: 20px;
+    margin: 2px;
+  }
+  #pd-img {
+    width: 20px;
+    height: 20px;
+  }
+  #pd-title {
+    height: 72px;
+  }
+  #pd-title p{
+    height: 40px;
+    margin: 2px;
+  }
+  #pd-title p strong{
+    margin: 0;
+    font-size: 12px;
+  }
+
+  #pd-dir p strong{
+    font-size: 12px;
+  }
+
+  #pd-dir{
+    height: 73px;
+  }
+
+  #pd-dir p{
+    margin: 2px;
+  }
+
+  #pd-cont-fecha {
+    width: 160px;
+  }
+
+  #fecha {
+    width: 154px;
+  }
+
+  #fecha div{
+    width: 40px;
+  }
+}

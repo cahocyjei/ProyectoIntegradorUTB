@@ -171,27 +171,61 @@ svg {
 
 
 @media (max-width:740px) {
-    .navbar-title h1 {
-        color: #f3d52b;
-        font-size: 20px;
-    }
 
-    .navbar-logo img {
-        height: 1em;
-        width: 1em;
-        border-radius: 100%;
-    }
-
-    svg {
-        width: .3em;
-        height: .3em;
-    }
-
-    #ttlo-car {
-        font-size: 15px;
-    }
+#content-ttlo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin: 4px;
 }
 
-.container-nav {
-    border: 1px black solid;
+#ttlo-nav {
+    margin: 10px;
+    font-size: 32px;
+    color: white;
+    text-shadow: 2px 2px 2px olive;
+    font-family: 'Tangerine', serif;
+}
+
+#id-cont-coment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    width: 150px;
+}
+
+#comentario {
+    color: olive;
+    text-shadow: 2px 2px 2px white;
+    font-size: 10px;
+}
+
+#container-car {
+    width: 90px;
+    height: 40px;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-menus{
+    width: 99%;
+    margin-left: 4px;
+}
+#nav-menus div{
+    width: 100px;
+}
+
+#car {
+    width: 55px;
+    height: 30px;
+    margin: 2px;
+}
+#car svg{
+    width: 16px;
+    height: 16px;
+}
 }

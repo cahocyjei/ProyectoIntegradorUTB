@@ -4,9 +4,8 @@ import { dbCar } from "../db-data/dbCar.js";
 //FUNCION QUE CREA UNA TABLA PARA LOS DATOS DE LA FACTURA CARRITO
 export function CarritoCompras() {
   const containerHeader = document.querySelector('.container-header'); //Toma el elemento ubicado en el index.html para inyectar el contenido de la tabla;
-  const containerProductos = document.querySelector('.container-productos');//Elemento ubicado en index.html
   containerHeader.innerHTML = ' '; // Limpia los contenedores
-  containerProductos.innerHTML = ' ';
+  containerHeader.classList.toggle('my-clase');
   let subTotal = 0;
   let iva;
   let granTotal;
@@ -25,7 +24,9 @@ export function CarritoCompras() {
   fetch('componentes/carritocompras.html')
     .then(response => response.text())
     .then(data => {
-      containerHeader.innerHTML = data;
+      const containerFactura = document.querySelector('.container-factura-carrito');
+      containerFactura.innerHTML = '';
+      containerFactura.innerHTML = data;
     })
     .then(() => { //Maneja el asincronismo
       const carMessage = document.getElementById('car-message');

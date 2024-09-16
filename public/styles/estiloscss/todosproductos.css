@@ -59,3 +59,31 @@
   font-family: 'Tangerine', serif;
   ;
 }
+
+@media (max-width:740px) {
+  #tdp-row-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 3 columnas de igual ancho */
+    width: 90%;
+    max-height: 85%;
+  }
+  #tod-prod-col {
+    width: 50px;
+  }
+
+  .container-todos-productos {
+    height: 98%;
+  }
+
+  #tdprod-img {
+    width: 20px;
+  }
+ 
+  img[alt]{
+    font-size: 8px;
+  }
+  .tod-prod-title {
+   font-size: 10px;
+  }
+}

@@ -6,6 +6,7 @@ import { CarritoCompras } from './scripts/carritocompras.js';
 import { PedidoProveedor } from './scripts/pedido.proveedor.js';
 import { TodosProductos } from './scripts/todosproductos.js';
 import { INICIO } from './utilidades/botoninicio.js';
+
 Header();
 Footer();
 Productos();

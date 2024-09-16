@@ -17,8 +17,7 @@ export function Productos() {
   titulo.textContent = 'Lo más pedido';
   const divContainer = document.createElement('div');
   divContainer.setAttribute('id', 'divContainer');
-  const fila = document.createElement('row')
-  fila.setAttribute('class', 'row g-3');
+  const fila = document.createElement('row');
   fila.setAttribute('id', 'fila');
   //containerProductos.insertBefore(titulo, containerProductos.firstChild);
   for (let j = 0; j < DbAvocados.length - 2; j++) {

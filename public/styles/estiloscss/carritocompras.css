@@ -1,36 +1,89 @@
-.table{
+.table {
   width: max-content;
   margin: 4px;
 }
-.containerTabla{
+
+.containerTabla {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#ttl-car-compras{
+
+#ttl-car-compras {
+  margin: 10px;
   text-align: center;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 10px rgb(255, 255, 255);
 }
 
-@keyframes parpadeo{
+@keyframes parpadeo {
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+ #car-message {
+    font-size: 40px;
+    margin: 4px;
+    animation: parpadeo 1s ease-in-out 5;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px olivedrab;
+    border: 1px olive solid;
+    text-align: center;
+    padding: 4px;
+  }
 
-#car-message{
-  animation: parpadeo 1s ease-in-out 5;
-  color: rgb(3, 75, 12);
-  text-shadow: 1px 1px 2px olivedrab;
-  border: 1px olive solid;
-  text-align: center;
-  padding: 4px;
 
+.container-factura-carrito{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: olive;
+  margin: 7px;
+}
+
+.containerTabla {
+  justify-content: center;
+  align-items: center;
+}
+
+.my-clase{
+  width: 0px;
+  height: 0px;
+  background-color: white;
+  border: 0px;
+}
+
+@media (max-width:740px) {
+  #ttl-car-compras {
+    font-size: 20px;
+    color: white;
+  }
+
+  .container-factura-carrito{
+    display: block;
+    background-color: olive;
+    margin: 7px;
+  }
+
+  .containerTabla {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  #car-message {
+    font-size: 20px;
+  }
+
+  .table {
+    width: 98%;
+  }
 }
