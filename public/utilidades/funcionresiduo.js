@@ -1,9 +1,9 @@
 /**
- * @INICIO Esta función devuelve un número par. Recibe dos parametros
+ * @numeroPar Esta función devuelve un número par. Recibe dos parametros
  * numerador y denominador.
  */
 
-export const numeroPar = (num, den ) => {
+export const numeroPar = (num, den) => {
   const count_row = 0;
   const residuo = num.length % den;
   if (residuo == 0) {

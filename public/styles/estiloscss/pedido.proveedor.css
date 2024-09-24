@@ -1,10 +1,10 @@
 /*Estilos head*/
 .ped-alm-container {
-  width: 99.5%;
+  width: 50%;
   margin: 4px;
   background-color: rgb(202, 198, 198);
   border: 1px rgb(131, 128, 128) solid;
-  height: auto;
+  height: 400px;
 }
 
 .ped-contenido-head {
@@ -113,34 +113,37 @@ input[type='number'] {
   width: 37%;
 }
 
-#pd-prov-img{
+#pd-prov-img {
   border-radius: 100px;
   width: 30px;
   height: 30px;
   margin: 2px;
 }
 
-#pd-prov-content{
+#pd-prov-content {
   margin: 10px;
   box-shadow: 4px 4px 10px rgb(29, 29, 28);
   border-radius: 10px;
-  display: flex;
-  width: 170px;
-  height: 50px;
+  display: block;
+  width: 100px;
+  height: 70px;
   background-color: olive;
 }
 
-#pd-nom-prod{
-margin: 2px;
-text-align: center;
-color: black;
-text-shadow: 1px 1px 2px greenyellow;
+#pd-nom-prod {
+  font-size: 12px;
+  margin-top: 8px;
+  margin-left: 0;
+  text-align: center;
+  color: black;
+  height: 20px;
+  text-shadow: 1px 1px 2px greenyellow;
 }
 
-#pd-nom-prod:hover{
-  
- transform: translateX(-2px);
- transition: transform 0.3s ease-in-out; 
+#pd-nom-prod:hover {
+
+  transform: translateX(-2px);
+  transition: transform 0.3s ease-in-out;
 }
 
 /*Estilos Factura prod*/
@@ -148,23 +151,24 @@ text-shadow: 1px 1px 2px greenyellow;
   width: 61.6%;
   border: 1px white solid;
   margin-bottom: 4px;
- 
+  height: 56%;
   display: block;
   margin-left: 38%;
   margin-top: -227px;
 }
-.num-fact-content{
+
+.num-fact-content {
   display: flex;
   width: 100%;
   margin: 4px;
   border: 1px rgb(131, 128, 128) solid;
 }
 
-#pd-det{
+#pd-det {
   width: 46%;
 }
 
-#dia{
+#dia {
   width: 50px;
   text-align: center;
   margin-left: 4px;
@@ -176,35 +180,60 @@ text-shadow: 1px 1px 2px greenyellow;
   margin-left: 4px;
 }
 
-#mes{
+#mes {
   width: 50px;
   text-align: center;
   margin-left: 4px;
 }
-thead tr th{
+
+thead tr th {
   text-align: center;
 }
-.cod-prod-content{
+
+.cod-prod-content {
+  width: 99%;
+  height: 50px;
+  margin: 4px;
   justify-content: space-evenly;
 }
-.nom-prod-precio{
+
+.nom-prod-precio {
+  width: 99%;
+  height: 100px;
+  margin: 4px;
   justify-content: space-evenly;
 }
-#pd-cdgo-list{
+
+.nom-prod-precio label {
+  margin: 10px;
+}
+
+#ad-fact {
+  margin-top: 20px;
+  width: 90%;
+}
+
+#pd-cdgo-list {
+  margin-top: 8px;
+  font-size: 12px;
   margin-left: 0;
+  height: 20px;
   font-weight: bold;
 }
-#pd-num-pedido{
+
+#pd-num-pedido {
   width: 182px;
 }
-#pd-enviar{
-  width: 98%;
+
+#pd-enviar {
+  width: 22%;
   margin: 8px;
   border-radius: 10px;
   background-color: olive;
   color: white;
 }
-#pd-fila{
+
+#pd-fila {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* 3 columnas de igual ancho */
@@ -215,8 +244,10 @@ thead tr th{
   overflow-y: scroll;
 }
 
-@media (max-width: 740px){
+@media (max-width: 740px) {
   .ped-alm-container {
+    width: 99.5%;
+    height: 580px;
     margin: 2px;
     border: 1px rgb(15, 9, 9) solid;
   }
@@ -228,47 +259,232 @@ thead tr th{
     width: 99.5;
   }
 
+  #pd-num-container {
+    display: flex;
+    justify-content: space-around;
+    width: 99%;
+  }
+
   #pd-logo-form {
-    width: 20px;
+    width: 98%;
     margin: 2px;
+    margin-left: 45%;
   }
+
   #pd-img {
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
   }
+
   #pd-title {
-    height: 72px;
+    height: 30px;
   }
-  #pd-title p{
-    height: 40px;
+
+  #pd-title p {
+    height: 25px;
     margin: 2px;
   }
-  #pd-title p strong{
+
+  #pd-title p strong {
     margin: 0;
     font-size: 12px;
   }
 
-  #pd-dir p strong{
+  #pd-dir p strong {
     font-size: 12px;
   }
 
-  #pd-dir{
-    height: 73px;
+  #pd-dir {
+    height: 60px;
   }
 
-  #pd-dir p{
+  #pd-dir p {
     margin: 2px;
   }
 
   #pd-cont-fecha {
-    width: 160px;
+    width: 99%;
+  }
+
+  #pd-cont-fecha h6 {
+    margin: 2px;
   }
 
   #fecha {
-    width: 154px;
+    display: flex;
+    justify-content: space-around;
+    width: 99%;
   }
 
-  #fecha div{
-    width: 40px;
+  #fecha div {
+    width: 70px;
+  }
+
+  #fecha div label {
+    margin-left: 20px;
+  }
+
+  #año {
+    width: 60px;
+  }
+
+  #pd-select {
+    width: 110px;
+    height: 70px;
+  }
+
+  #pd-lab-select {
+    margin-left: 4px;
+  }
+
+  #opciones {
+    height: 30px;
+  }
+
+  #pd-select-dir div p {
+    margin: 4px;
+    font-size: 10px;
+  }
+
+  #pd-select-dir {
+    display: block;
+  }
+
+  .pd-list-prod-container {
+    height: 35%
+  }
+
+  .pd-fact-container {
+    margin-left: 38%;
+    height: 35%;
+    margin-top: -206px;
+  }
+
+  #pd-fila {
+    height: 200px;
+    margin: 2px;
+  }
+
+  #pd-prov-content {
+    display: block;
+    width: 50px;
+    height: 70px;
+    margin: 2px;
+  }
+
+  #pd-cdgo-list {
+    font-size: 10px;
+  }
+
+  #pd-nom-prod {
+    font-size: 8px;
+    height: 8px;
+  }
+
+  #pd-prov-img {
+    margin: 2px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .cod-prod-content label {
+    font-size: 12px;
+    height: 20px;
+    margin: 1px;
+  }
+
+  #fact-cdgo {
+    font-size: 14px;
+    width: 50px;
+    height: 30px;
+  }
+
+  .cod-prod-content {
+    margin: 2px;
+
+  }
+
+  .cod-prod-content h5,
+  h6 {
+    margin: 2px;
+    margin-left: 4px;
+    font-size: 10px;
+  }
+
+  .nom-prod-precio {
+    display: block;
+    margin: 2px;
+    width: 213px;
+    height: 72%;
+  }
+
+  .nom-prod-precio label {
+    width: 20px;
+    font-size: 14px;
+    margin-left: 4px;
+  }
+
+  #fact-nom {
+    font-size: 14px;
+    width: 50px;
+    height: 25px;
+    margin-left: 20px;
+  }
+
+  #fact-stock {
+    font-size: 14px;
+    width: 50px;
+    height: 25px;
+    margin-left: 10px;
+  }
+
+  #fact-cant {
+    margin: 10px;
+    width: 50px;
+    margin-left: 10px;
+  }
+
+  .contenido-fact {
+    width: 99.5%;
+    display: block;
+    margin: 2px;
+    background-color: bisque;
+  }
+
+  table thead tr th {
+    font-size: 10px;
+  }
+
+  table tbody tr td {
+    font-size: 10px;
+  }
+
+  tfoot tr td strong {
+    font-size: 10px;
+  }
+
+  #ttal-cant {
+    font-weight: bold;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  #total-fact {
+    font-weight: bold;
+    font-size: 10px;
+    margin-left: 0;
+  }
+
+  #lab-cant-ped {
+    width: 100px;
+  }
+
+  #ad-fact {
+    margin-top: 10px;
+    width: 90%;
+  }
+
+  #pd-enviar {
+    width: 96%;
   }
 }

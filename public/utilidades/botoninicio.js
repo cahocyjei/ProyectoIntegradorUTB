@@ -7,11 +7,18 @@ import { TodosProductos } from "../scripts/todosproductos.js";
  */
 export function INICIO() {
   //Reinicia la pagina y recarga los productos
-    const containerProductos = document.querySelector('.container-productos');
-    containerProductos.innerHTML = '';
-    //const containerTodosProductos = document.querySelector('.container-todos-productos');
-    //containerTodosProductos.innerHTML = '';
-    Header();//Recarga el header
-    Productos();
-    TodosProductos();
+
+  const containerHeader = document.querySelector('.container-header');
+  containerHeader.innerHTML = '';
+  Header();
+  const containerFacturCarrito = document.querySelector('.container-factura-carrito')
+  containerFacturCarrito.innerHTML = '';
+  const containerProductos = document.querySelector('.container-productos');
+  containerProductos.innerHTML = '';
+  Productos();
+  const containerPedidoProv = document.querySelector('.container-pedido-proveedor');
+  containerPedidoProv.innerHTML = '';
+  const containerTodosProductos = document.querySelector('.container-todos-productos');
+  containerTodosProductos.innerHTML = '';
+  TodosProductos();
 }

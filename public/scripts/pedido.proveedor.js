@@ -18,10 +18,13 @@ export function PedidoProveedor() {
     .then(response => response.text())
     .then((data) => {
       const header_contentenido = document.querySelector('.container-header');
+      const containerPedidoProv = document.querySelector('.container-pedido-proveedor');
       const contenido = document.getElementById('contenido');
+      const containerTodosProd = document.querySelector('.container-todos-productos');
+      containerTodosProd.innerHTML = '';
       contenido.innerHTML = '';
       header_contentenido.innerHTML = '';
-      header_contentenido.innerHTML = data;
+      containerPedidoProv.innerHTML = data;
     })
     .then(() => {
       const listProdFact = document.querySelector('.pd-list-prod-container');
@@ -71,7 +74,7 @@ export function PedidoProveedor() {
       añadirProdFact.addEventListener('click', () => {
         AñadirDatosFacturaPedido();
       })
-        BuscarRegistroFactura();
+      BuscarRegistroFactura();
     })
 }
 

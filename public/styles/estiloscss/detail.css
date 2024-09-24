@@ -7,9 +7,10 @@
 
 #ttlo-detail {
   text-align: center;
-  text-shadow: 4px 4px 10px olive;
+  text-shadow: 4px 4px 10px rgb(255, 255, 255);
   font-size: 72px;
   font-family: 'Tangerine', serif;
+
 }
 
 #id-img {
@@ -85,6 +86,86 @@ input[type="number"] {
   margin-left: 35%;
 }
 
-#sku #nombre #precio #stock{
+#sku #nombre #precio #stock {
   font-size: 32px;
+}
+
+@media (max-width:740px) {
+  #ttlo-detail {
+    margin: 2px;
+    font-size: 30px;
+  }
+
+  #card-detail {
+    width: 150px;
+    height: 225px;
+  }
+
+  #id-container {
+    display: block;
+  }
+
+  #id-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 200px;
+  }
+
+  .card-body {
+    margin: 2px;
+    width: 100px;
+    height: 127px;
+    margin-left: 10px;
+  }
+
+  #sku,
+  #nombre,
+  #stock {
+    font-size: 12px;
+  }
+
+  #precio {
+    font-size: 14px;
+  }
+
+  #pdescrip {
+    margin: 2px;
+    font-size: 10px;
+    width: 165px;
+  }
+
+  .detail {
+    margin: 2px;
+    width: 170px;
+    height: max-content;
+  }
+
+  #message-prod-añadido {
+
+    width: 170px;
+  }
+
+  #cant {
+    margin-left: 40%;
+    width: 30px;
+    height: 30px;
+  }
+
+  #ad-car {
+    display: flex;
+    font-size: 12px;
+    width: 170px;
+  }
+
+  #ad-car svg {
+    margin-left: 20px;
+    width: 20px;
+  }
+
+  #msge-prod {
+    text-align: center;
+    margin: 2px;
+    font-size: 10px;
+  }
+
 }

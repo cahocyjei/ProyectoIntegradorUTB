@@ -5,7 +5,7 @@ import { dbCar } from "../db-data/dbCar.js";
 export function CarritoCompras() {
   const containerHeader = document.querySelector('.container-header'); //Toma el elemento ubicado en el index.html para inyectar el contenido de la tabla;
   containerHeader.innerHTML = ' '; // Limpia los contenedores
-  containerHeader.classList.toggle('my-clase');
+  //containerHeader.classList.toggle('my-clase');
   let subTotal = 0;
   let iva;
   let granTotal;
@@ -24,11 +24,15 @@ export function CarritoCompras() {
   fetch('componentes/carritocompras.html')
     .then(response => response.text())
     .then(data => {
+      const containerPedidoProv = document.querySelector('.container-pedido-proveedor')
       const containerFactura = document.querySelector('.container-factura-carrito');
       containerFactura.innerHTML = '';
+      containerPedidoProv.innerHTML = '';
       containerFactura.innerHTML = data;
     })
     .then(() => { //Maneja el asincronismo
+      const containerProductos = document.querySelector('.container-productos')
+      containerProductos.innerHTML = "";
       const carMessage = document.getElementById('car-message');
       const tBody = document.querySelector('.tbody-fact');
       let registro;

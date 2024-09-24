@@ -16,15 +16,15 @@ document.addEventListener('DOMContentLoaded', () => {
   //Muestra la factura del carrito de compras
 
   const carritoCompras = document.getElementById('car');
-  carritoCompras.addEventListener('click', ()=>{
+  carritoCompras.addEventListener('click', () => {
     CarritoCompras();
   })
   //Muestra todos los productos
-  const prdto = document.getElementById('prdto');
+  //const prdto = document.getElementById('prdto');
   const pd_proveedor = document.getElementById('pd-proveedor');
-  prdto.addEventListener('click', () => {
-    TodosProductos();
-  });
+  //prdto.addEventListener('click', () => {
+  //  TodosProductos();
+  //});
 
   //Despliega el formulario de pedidos al proveedor
   pd_proveedor.addEventListener('click', () => {

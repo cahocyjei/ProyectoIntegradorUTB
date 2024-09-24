@@ -25,15 +25,21 @@
   border-radius: 10px;
   width: 150px;
   height: 150px;
+  cursor: pointer;
+}
+
+#prod-col:hover {
+  transform: translateX(2px);
+  transition: transform 0.3s ease-in-out;
 }
 
 #ttlo {
+  width: 40%;
   text-align: center;
   text-shadow: 4px 4px 10px olive;
   font-family: 'Tangerine', serif;
   font-size: 55px;
   margin-top: 10px;
-  margin-right: 16px;
 }
 
 #contenido {
@@ -45,9 +51,9 @@
 }
 
 #divContainer {
-  border: 1px olive solid;
+  /*border: 1px olive solid;*/
   margin: 16px;
-  width: 17%;
+  width: 50%;
   height: 400px;
 }
 
@@ -66,44 +72,46 @@
   grid-template-columns: repeat(2, 1fr);
   margin: 16px;
   height: 270px;
-  width: 400px;
+  width: 550px;
   overflow-y: scroll;
-  }
+}
 
 @media (max-width:740px) {
 
   #contenido {
     width: 98%;
-    height: 400px;
+    height: 50%;
     margin-left: 4px;
   }
 
   #divContainer {
     margin: 4px;
-    width: 25%;
+    width: 50%;
     height: 55%;
     margin-left: 4px;
   }
 
   #ttlo {
-    font-size: 24px;
+    margin: 4px;
+    width: 30%;
+    margin-left: 20px;
+    font-size: 14px;
   }
 
   #fila {
-    grid-template-columns: repeat(2, 1fr);
-    margin: 4px;
-    width: 150px;
+    margin: 2px;
+    width: 180px;
     height: 150px;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
+    border: 1px black solid
   }
 
   #prod-col {
     margin: 2px;
-    margin-left: 10px;
+    margin-left: 8px;
     border-radius: 10px;
-    width: 50px;
+    width: 35px;
     height: 50px;
   }
 
@@ -113,7 +121,7 @@
   }
 
   .card-title {
-    font-size: 10px;
+    font-size: 8px;
   }
 
 }

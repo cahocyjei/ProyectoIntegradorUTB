@@ -13,34 +13,35 @@ body {
     height: auto;
 }
 
-.menus{
+.menus {
     margin-left: 0;
     margin-right: 16px;
     border: 1px black solid;
 }
 
-#nav-menus{
+#nav-menus {
     margin: 10px;
     display: flex;
     border: 1px olive solid;
 }
 
-#mnu-productos, #mnu-pedidos{
+#mnu-productos,
+#mnu-pedidos {
     background-color: olive;
     margin: 10px;
 }
 
-#inicio{
-padding: 3px;
-margin: 10px;
-color: white;
-background-color: olive;
-border: 1px white solid; 
-width: 90px; 
-text-align: center; 
-margin: 2px;
-font-size: 18px;
-border-radius: 10px;
+#inicio {
+    padding: 3px;
+    margin: 10px;
+    color: white;
+    background-color: olive;
+    border: 1px white solid;
+    width: 90px;
+    text-align: center;
+    margin: 2px;
+    font-size: 18px;
+    border-radius: 10px;
 }
 
 #btn-prod {
@@ -49,13 +50,15 @@ border-radius: 10px;
     border: 1px olive;
 
 }
-.cont-btn{
+
+.cont-btn {
     margin: 10px;
 }
-#btn-pedidos{
-   background-color: olive;
+
+#btn-pedidos {
+    background-color: olive;
     color: white;
-    border: 1px olive; 
+    border: 1px olive;
 }
 
 .nav-container {
@@ -171,61 +174,70 @@ svg {
 
 
 @media (max-width:740px) {
+    body {
+        margin-top: 101px;
+    }
 
-#content-ttlo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    margin: 4px;
-}
+    #content-ttlo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        margin: 4px;
+    }
 
-#ttlo-nav {
-    margin: 10px;
-    font-size: 32px;
-    color: white;
-    text-shadow: 2px 2px 2px olive;
-    font-family: 'Tangerine', serif;
-}
+    #ttlo-nav {
+        margin: 10px;
+        font-size: 32px;
+        color: white;
+        text-shadow: 2px 2px 2px olive;
+        font-family: 'Tangerine', serif;
+    }
 
-#id-cont-coment {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 4px;
-    width: 150px;
-}
+    #id-cont-coment {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4px;
+        width: 150px;
+    }
 
-#comentario {
-    color: olive;
-    text-shadow: 2px 2px 2px white;
-    font-size: 10px;
-}
+    #comentario {
+        color: olive;
+        text-shadow: 2px 2px 2px white;
+        font-size: 10px;
+    }
 
-#container-car {
-    width: 90px;
-    height: 40px;
-    margin: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    #container-car {
+        width: 90px;
+        height: 40px;
+        margin: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-#nav-menus{
-    width: 99%;
-    margin-left: 4px;
-}
-#nav-menus div{
-    width: 100px;
-}
+    #nav-menus {
+        width: 99%;
+        margin-left: 4px;
+    }
 
-#car {
-    width: 55px;
-    height: 30px;
-    margin: 2px;
-}
-#car svg{
-    width: 16px;
-    height: 16px;
-}
+    #nav-menus div {
+        width: 100px;
+    }
+
+    #car {
+        width: 55px;
+        height: 30px;
+        margin: 2px;
+    }
+
+    #car svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    #ttlo-car {
+        font-size: 12px;
+    }
 }

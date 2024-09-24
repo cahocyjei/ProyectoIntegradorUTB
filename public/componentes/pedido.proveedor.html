@@ -2,7 +2,7 @@
   <div class="ped-contenido-head">
     <!--Cabecera Formulario-->
     <div id="pd-logo-form">
-      <img id="pd-img" src="/public/images/avocados.jpg" alt="logo-pd-form">
+      <img id="pd-img" src="/images/avocados.jpg" alt="logo-pd-form">
     </div>
     <div id="pd-title">
       <p class="text-center">
@@ -18,9 +18,11 @@
     <div id="pd-cont-fecha">
       <h6 class="text-center">Fecha</h6>
       <div id="fecha">
-        <div class="m-0"><label class="m-0" for="dia">Día</label><input id="dia" type="number" min="1" max="31" name="dia"></div>
+        <div class="m-0"><label class="m-0" for="dia">Día</label><input id="dia" type="number" min="1" max="31"
+            name="dia"></div>
         <div class="m-0"><label for="mes">Mes</label><input id="mes" type="number" min="1" max="12" name="mes"></div>
-        <div class="m-0"><label for="año">Año</label><input id="año" type="number" min="2019" max="2040" name="año"></div>
+        <div class="m-0"><label for="año">Año</label><input id="año" type="number" min="2019" max="2040" name="año">
+        </div>
       </div>
     </div>
     <div id="pd-num-container">
@@ -50,62 +52,65 @@
     </div>
   </div>
 
-   <!--Lista Productos-->
-    <div class="pd-list-prod-container">
-      <div id="pd-fila" class="row">
-      </div>
+  <!--Lista Productos-->
+  <div class="pd-list-prod-container">
+    <div id="pd-fila" class="row">
     </div>
+  </div>
 
-    <!--Factura Pedidos--> 
-      <!--Body Pedido-->
-    <div class="pd-fact-container">
-      <div class="cod-prod-content" style="display: flex; margin: 10px;padding: 4px;border: 1px black solid;margin: 10px;">
-        <!--Codigo-->
-        <label for="codgo" style="margin-right: 4px;">Codigo</label>
-        <input id="fact-cdgo" type="text" name="codgo" value="" style="height: 30px;width: 80px;text-align: center;">
-        <h5>Pedido hecho por: <h6 style="margin: 4px;margin-left: 2%;">Omar Cabarcas</h5></h4>
-      </div>
-      <!--Nombre producto-->
-      <div class="nom-prod-precio" style="display: flex;border: 1px black solid;margin: 10px;padding: 4px;">
-        <label for="nom" style="margin-right: 4px;">Nombre</label>
-        <input id="fact-nom" type="text" name="nom" style="width: 150px;text-align: center;">
-        <!--Stock producto-->
-        <label for="stock" style="margin-right: 4px;">Stock</label>
-        <input id="fact-stock" type="text" name="stock" style="width: 50px;text-align: center;">
-        <!--Cantidad a pedir-->
-        <label for="cant" style="margin-right: 4px;">Cantidad a Pedir</label>
-        <input id="fact-cant" type="number" name="cant" style="width: 50px;text-align: center;" min="1" max="100" value="0">
-        <input id="ad-fact" type="submit" value="Ad-Fact" style="margin-left: 7.5%;background-color: olive;color: white;border-radius: 10px;">
-      </div>
-      <div class="contenido-fact"
-      style="display: flex;border: 1px black solid;margin: 10px;
-      justify-content: center;align-items: center;">
-        <table class="table table-bordered border-primary" style="margin: 10px;">
-          <thead>
-            <tr>
-              <th>Código</th>
-              <th>Nombre</th>
-              <th>Cantidad</th>
-              <th>Stock</th>
-              <th>Precio</th>
-              <th>Total</th>
-            </tr>
-          </thead>
-          <tbody id="t-body-fact" style="overflow: scroll;">
-            
-          </tbody>
-          <tfoot>
-            <tr>
-              <td></td>
-              <td><strong>Ttal Cantidad</strong></td>
-              <td id="ttal-cant" style="font-weight: bold;font-size: 18px;text-align: center;"></td>
-              <td></td>
-              <td><strong>Total Factura</strong></td>
-              <td id="total-fact" style="font-weight: bold;font-size: 18px;text-align: center;"></td>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
-      <button id="pd-enviar" >Enviar Pedido</button>
+  <!--Factura Pedidos-->
+  <!--Body Pedido-->
+  <div class="pd-fact-container">
+    <div class="cod-prod-content" style="display: flex;padding: 4px;border: 1px black solid;">
+      <!--Codigo-->
+      <label for="codgo" style="margin-right: 4px;">Codigo</label>
+      <input id="fact-cdgo" type="text" name="codgo" value="">
+      <h5>Pedido hecho por: <h6 style="margin: 4px;margin-left: 2%;">Omar Cabarcas</h5>
+      </h4>
     </div>
+    <!--Nombre producto-->
+    <div class="nom-prod-precio" style="border: 1px black solid;padding: 4px;">
+      <label for="nom" style="margin-right: 4px;">Nombre</label>
+      <input id="fact-nom" type="text" name="nom" style="text-align: center;">
+      <!--Stock producto-->
+      <label for="stock" style="margin-right: 4px;">Stock</label>
+      <input id="fact-stock" type="text" name="stock" style="text-align: center;">
+      <!--Cantidad a pedir-->
+      <label id="lab-cant-ped" for="cant">Cantidad a Pedir</label>
+      <input id="fact-cant" type="number" name="cant" style="text-align: center;" min="1" max="100" value="0">
+      <input id="ad-fact" type="submit" value="Ad-Fact"
+        style="margin-left: 7.5%;background-color: olive;color: white;border-radius: 10px;">
+    </div>
+  </div>
+</div>
+
+
+<div class="contenido-fact" style="border: 1px black solid;
+justify-content: center;align-items: center;">
+  <table class="table table-bordered border-primary">
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Cantidad</th>
+        <th>Stock</th>
+        <th>Precio</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody id="t-body-fact" style="overflow: scroll;">
+
+    </tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td><strong>Ttal Cantidad</strong></td>
+        <td id="ttal-cant"></td>
+        <td></td>
+        <td><strong>Total Factura</strong></td>
+        <td id="total-fact"></td>
+      </tr>
+    </tfoot>
+  </table>
+  <button id="pd-enviar">Enviar Pedido</button>
 </div>
